@@ -87,14 +87,14 @@ export interface MinorProject {
 export const minorProjects: MinorProject[] = [
   {
     title: 'Mānoa Now Admin Board',
-    summary: 'A web app to manage and upload new content for the Mānoa Now mobile app.',
+    summary: 'Improved a web app to manage and upload new content for the Mānoa Now mobile app with a refactored database architecture.',
     tags: ['React', 'TypeScript', 'Firebase'],
     links: {
     },
   },
   {
     title: 'UH Groupings API',
-    summary: 'Contribute to the development of the open-source UH Groupings API, a RESTful API for managing and retrieving group information.',
+    summary: 'Contribute to the development of the open-source UH Groupings API, a backend with a RESTful API for managing and retrieving group information.',
     tags: ['SpringBoot', 'Java', 'Swagger', 'IAM'],
     links: {
       github: 'https://github.com/uhawaii-system-its-ti-iam/uh-groupings-api',
@@ -104,6 +104,13 @@ export const minorProjects: MinorProject[] = [
     title: 'Judiciary Form Filler',
     summary: 'Research under Dr. Belcaid to develop a Claude skill that assists users in filling out Hawai`i judicial forms.',
     tags: ['Python', 'Claude', 'Pydantic', 'PydanticAI'],
+    links: {
+    },
+  },
+  {
+    title: 'UH Pathfinder',
+    summary: 'A web app to help UH students explore career opportunities and get personalized educational pathways.',
+    tags: ['React', 'Flask', 'Supabase', 'Vercel'],
     links: {
     },
   },

@@ -6,6 +6,7 @@ import PlaceholderImage from '../components/PlaceholderImage'
 import ProjectCard from '../components/ProjectCard'
 import SocialLinks from '../components/SocialLinks'
 import { projects } from '../data/projects'
+import headshot from '../images/headshot.jpg'
 
 const values = [
   {
@@ -56,6 +57,8 @@ function Home() {
                   variant={2}
                   icon="person"
                   rounded="circle"
+                  src={headshot}
+                  className="profile-photo-frame"
                 />
               </div>
               <SocialLinks
@@ -118,6 +121,8 @@ function Home() {
                     variant={3}
                     icon="person"
                     rounded="circle"
+                    src={headshot}
+                    className="profile-photo-frame profile-photo-frame-compact"
                   />
                 </div>
               </Col>

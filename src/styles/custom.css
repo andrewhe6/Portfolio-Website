@@ -409,6 +409,19 @@ p {
   display: block;
 }
 
+.profile-photo-frame {
+  padding: 9px;
+  background: linear-gradient(
+    135deg,
+    var(--color-space-blue-500) 0%,
+    var(--color-space-blue-100) 100%
+  );
+}
+
+.profile-photo-frame-compact {
+  padding: 5px;
+}
+
 /* ==========================================================================
    Timeline (Experience)
    ========================================================================== */
