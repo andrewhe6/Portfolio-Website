@@ -131,13 +131,18 @@ async function sendEmail(
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      from: 'Portfolio Contact <onboarding@resend.dev>',
+      from: 'Portfolio Contact <contact@andrewhe.dev>',
       to: [env.CONTACT_TO_EMAIL],
       reply_to: email,
       subject: `New message from ${name}`,
       text: `From: ${name} <${email}>\n\n${message}`,
     }),
   })
+
+  if (!response.ok) {
+    console.error('Resend send failed:', response.status, await response.text())
+  }
+
   return response.ok
 }
 
