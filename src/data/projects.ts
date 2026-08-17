@@ -57,7 +57,7 @@ export const projects: Project[] = [
     slug: 'budgeting-website',
     title: 'Budgeting App',
     summary:
-      'Replace with a one or two sentence summary: the problem it solved, your role, and the outcome.',
+      'A personal analytics dashboard that allows users to manually record their income and expenses and analyze their spending over time.',
     description: [
       'Replace with a paragraph describing the problem this project solved and who it was for.',
       'Replace with a paragraph describing your approach, key technical decisions, and any challenges you overcame.',

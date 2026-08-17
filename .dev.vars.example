@@ -1,0 +1,8 @@
+# Local secrets for `wrangler dev`. Copy this file to `.dev.vars` and fill in
+# real values — `.dev.vars` is gitignored and never committed.
+# In production, these are set as encrypted Secrets in the Cloudflare dashboard
+# (Workers & Pages > your Worker > Settings > Variables and Secrets), not here.
+
+RESEND_API_KEY=
+TURNSTILE_SECRET_KEY=
+CONTACT_TO_EMAIL=andrewhe9264@gmail.com
