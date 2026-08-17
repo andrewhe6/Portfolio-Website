@@ -32,6 +32,17 @@ export default {
 } satisfies ExportedHandler<Env>
 
 async function handleContact(request: Request, env: Env): Promise<Response> {
+  const missingConfig = (
+    ['RESEND_API_KEY', 'TURNSTILE_SECRET_KEY', 'CONTACT_TO_EMAIL'] as const
+  ).filter((key) => !env[key])
+  if (missingConfig.length > 0) {
+    console.error('Missing required Worker config:', missingConfig.join(', '))
+    return json(
+      { error: 'Contact form is misconfigured. Please try again later.' },
+      500,
+    )
+  }
+
   let body: ContactPayload
   try {
     body = await request.json()
